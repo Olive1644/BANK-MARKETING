@@ -22,9 +22,9 @@ def main():
     duration = st.number_input("Last Contact Duration (seconds)", min_value=0, max_value=10000, value=0)
     euribor3m = st.number_input("Euribor 3 Month Rate", min_value=0.0, max_value=10.0, value=0.0)
     nr_employed = st.number_input("Number of Employees", min_value=0, max_value=100000, value=0)
-    emp.var.rate = st.number_input("Employment Variation Rate", min_value=-10.0, max_value=10.0, value=0.0)
-    cons.price.idx = st.number_input("Consumer Price Index", min_value=0.0, max_value=100.0, value=0.0)
-    cons.conf.idx = st.number_input("Consumer Confidence Index", min_value=-100.0, max_value=100.0, value=0.0)
+    emp_var_rate = st.number_input("Employment Variation Rate", min_value=-10.0, max_value=10.0, value=0.0)
+    cons_price_idx = st.number_input("Consumer Price Index", min_value=0.0, max_value=100.0, value=0.0)
+    cons_conf_idx = st.number_input("Consumer Confidence Index", min_value=-100.0, max_value=100.0, value=0.0)
 
     # predict button
     if st.button("Predict"):
