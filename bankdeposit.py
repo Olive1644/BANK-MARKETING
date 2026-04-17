@@ -62,7 +62,7 @@ def main():
     age = st.number_input("Age", min_value=18, max_value=100, value=30)
     job = st.selectbox("Job", ["admin", "blue-collar", "entrepreneur", "housemaid", "management", "self-employed", "services", "retired", "student", "technician", "unemployed"])
     marital = st.selectbox("Marital Status", ["married", "single", "divorced"])
-    education = st.selectbox("Education", ["primary", "secondary", "tertiary", "unknown"])
+    education = st.selectbox("Education", ["university.degree", "high.school", "basic.9y", "professional.course", "basic.4y", "basic.6y", "illiterate", "unknown"])
     default = st.selectbox("Has Credit in Default?", ["yes", "no"])
     housing = st.selectbox("Has Housing Loan?", ["yes", "no"])
     loan = st.selectbox("Has Personal Loan?", ["yes", "no"])
